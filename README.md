@@ -2,6 +2,7 @@ SubtitleWordCounter
 ===================
 
 A small utility to count the words in a subtitle file
+
 Just a small repository for fun
 
 * Support SRT subtitles now.
