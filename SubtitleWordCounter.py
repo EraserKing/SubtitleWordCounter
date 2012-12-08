@@ -23,9 +23,10 @@ def main(argv):
 	
 	if wordsLists != {}:
 		if outputFileName != '':
-			with open(outputFileName, 'w') as outputFileHandler:
-				for word in sorted(wordsLists.keys()):
-					outputFileHandler.write('{}: {}\n'.format(word, wordsLists[word]))
+			try:
+				with open(outputFileName, 'w') as outputFileHandler:
+					for word in sorted(wordsLists.keys()):
+						outputFileHandler.write('{}: {}\n'.format(word, wordsLists[word]))
 			except:
 				print('ERROR: output file saving failed.\n')
 		for word in sorted(wordsLists.keys()):
